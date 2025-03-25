@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCE Connect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -24,9 +24,9 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link active text-white" aria-current="page" href="./home_page.html">Home</a>
                         <a class="nav-link text-white" href="./about_page.html">About</a>
-                        <a class="nav-link text-white" href="./help_page.html">Help</a>
-                        <a class="nav-link text-white" href="./login.html">Login</a>
-                        <a class="nav-link text-white" href="./signup.html">Signup</a>
+                        <a class="nav-link text-white" href="./help.html">Help</a>
+                        <a class="nav-link text-white" href="./authenticate/login.html">Login</a>
+                        <a class="nav-link text-white" href="./authenticate/signup.html">Signup</a>
                     </div>
                 </div>
               </div>
@@ -41,9 +41,9 @@
         </div>
         <h1 class="display-5 fw-bold text-body-emphasis">UNITE ENGAGE THRIVE!</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Join clubs, attend and organise events, connect with like-minded students—all in one place. Stay updated and be part of a vibrant campus community!</p>
+          <p class="lead mb-4">Your central hub for all campus activities. Join clubs, attend events, and stay connected with your college community.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Get Started</button>
+            <a href="./authenticate/signup.html" class="btn btn-primary btn-lg px-4 me-sm-3">Get Started</a>            
           </div>
         </div>
         </div>
@@ -54,7 +54,7 @@
         <div class="container px-0">
         <div class="d-flex justify-content-between align-items-center pb-2 border-bottom">
             <h2>Upcoming Events</h2>
-            <a href="#" class="btn btn-light">Explore</a>
+            <a href="./explore-events.html" class="btn btn-light">Explore</a>
         </div>
         
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -104,145 +104,10 @@
     </div>
     
     <!-- Clubs and Committees -->
-    <!-- <div class="container px-4 py-5" id="icon-grid">
-        <div class="d-flex justify-content-between align-items-center pb-2 border-bottom">
-            <h2>Clubs and Committees</h2>
-            <a href="" class="btn btn-light">Explore</a>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-center position-relative">
-            
-            <button class="carousel-control-prev position-absolute start-0 translate-middle-y" type="button" data-bs-target="#clubCarousel" data-bs-slide="prev" style="z-index: 10; background: rgba(0, 0, 0, 0.5); width: 30px; height: 30px; border-radius: 50%; top: 50%;">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <div id="clubCarousel" class="carousel slide w-100" data-bs-ride="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://csi.pce.ac.in/">
-                                        <img src="./images/clubsLogo/csi.jpg" alt="CSI-PCE">
-                                        <h5>CSI-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://gdgpce.vercel.app/">
-                                        <img src="./images/clubsLogo/gdg.jpg" alt="GDG-PCE">
-                                        <h5>GDG-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.pce.ac.in/students/student-activities/student-associations/nss/">
-                                        <img src="./images/clubsLogo/nss.jpg" alt="NSS-PCE">
-                                        <h5>NSS-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.ieee.pce.ac.in/">
-                                        <img src="./images/clubsLogo/ieee.png" alt="IEEE-PCE">
-                                        <h5>IEEE-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.swe.pce.ac.in/">
-                                        <img src="./images/clubsLogo/SWE.png" alt="SWE-PCE">
-                                        <h5>SWE-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://tpc.pce.ac.in/">
-                                        <img src="./images/clubsLogo/tpc.png" alt="TPC-PCE">
-                                        <h5>TPC-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.pce.ac.in/students/student-activities/student-associations/tapas/">
-                                    <img src="./images/clubsLogo/tapas-pce.jpg" alt="TAPAS-PCE">
-                                    <h5>TAPAS-PCE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <img src="./images/clubsLogo/student-council.jpg" alt="Student Council">
-                                    <h5>Student Council</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href = "https://sites.google.com/mes.ac.in/aesamesapce/home">
-                                        <img src="./images/clubsLogo/aesa.jpg" alt="AESA">
-                                        <h5>AESA</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href = "https://sites.google.com/mes.ac.in/aesamesapce/home">
-                                        <img src="./images/clubsLogo/mesa.jpg" alt="AESA">
-                                        <h5>MESA</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.pce.ac.in/students/student-activities/student-associations/iete/">
-                                        <img src="./images/clubsLogo/iete.jpg" alt="IETE">
-                                        <h5>IETE</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="club-card">
-                                    <a href="https://www.pce.ac.in/students/student-activities/student-associations/nature-club/">
-                                        <img src="./images/clubsLogo/Nature-Club.jpg" alt="Nature Club">
-                                        <h5>Nature Club</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-            <button class="carousel-control-next position-absolute end-0 translate-middle-y" type="button" data-bs-target="#clubCarousel" data-bs-slide="next" style="z-index: 10; background: rgba(0, 0, 0, 0.5); width: 30px; height: 30px; border-radius: 50%; top: 50%;">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div> -->
-
-    <!-- Clubs and Committees -->
     <div class="container px-4 py-5" id="icon-grid">
         <div class="d-flex justify-content-between align-items-center pb-2 border-bottom">
             <h2>Clubs and Committees</h2>
-            <a href="" class="btn btn-light">Explore</a>
+            <a href="./clubs.html" class="btn btn-light">Explore</a>
         </div>
 
         <div class="d-flex align-items-center justify-content-center position-relative">
@@ -373,9 +238,27 @@
         </div>
     </div>
 
+<!-- Event Head Section -->
+<div class="container-fluid py-4 border-bottom" id="custom-cards">
+    <hr>
+    <div class="container px-0">
+        <div class="py-3 justify-content-between align-items-center pb-2 border-bottom">
+            <h2>Organise Events</h2>
+            <p class="text-muted">Manage and oversee upcoming events efficiently.</p>
+            <div class="mt-3">
+                <a href="./club_head.html" class="btn btn-primary">
+                    <i class="bi bi-calendar-check"></i> Go to Club Head Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
     
     <!-- Footer -->
-    <footer style="background-color: #1B3058; color: white; padding: 20px 0; text-align: center;">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
